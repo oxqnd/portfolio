@@ -2,17 +2,17 @@ import { Progress } from "@/components/ui/progress"
 
 export function SkillsSection() {
   const skills = [
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "TypeScript", level: 75 },
-    { name: "HTML/CSS", level: 95 },
-    { name: "Next.js", level: 80 },
-    { name: "SQL", level: 70 },
-    { name: "GraphQL", level: 65 },
+    { name: "C", level: 80 },
+    { name: "C++", level: 85 },
+    { name: "C#", level: 90 },
+    { name: "Python", level: 90 },
+    { name: "Rust", level: 70 },
+    { name: "JavaScript", level: 75 },
+    { name: "TypeScript", level: 65 },
+    { name: "R", level: 70 },
   ]
 
-  const tools = ["VS Code", "Git", "Docker", "Figma", "AWS", "Firebase", "Jest", "Webpack"]
+  const tools = ["Visual Studio", "Visual Studio Code", "Nvidia Triton","Cuda","Git", "Docker", "WSL2", "Ubuntu"]
 
   return (
     <div className="p-8">

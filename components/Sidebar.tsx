@@ -16,11 +16,20 @@ const playlists = [
   "Hip Hop Favorites",
 ]
 
-export function Sidebar({ setActiveSection }: { setActiveSection: (section: string) => void }) {
+interface SidebarProps {
+  setActiveSection: (section: string) => void
+  isOpen: boolean
+}
+
+export function Sidebar({ setActiveSection, isOpen }: SidebarProps) {
   return (
-    <div className="w-60 bg-black text-gray-300 flex flex-col h-screen">
-      <div className="p-6">
-        <h1 className="text-2xl font-bold text-white mb-6">Portfolio</h1>
+    <div
+      className={`bg-black text-gray-300 flex flex-col h-screen border-r border-gray-800 transition-all duration-300 overflow-hidden ${
+        isOpen ? "w-60" : "w-0"
+      }`}
+    >
+      <div className="p-6 min-w-60">
+        <h1 className="text-2xl font-bold text-white mb-6 pl-8">Portfolio</h1>
         <nav>
           <ul className="space-y-2">
             <li>
@@ -101,7 +110,7 @@ export function Sidebar({ setActiveSection }: { setActiveSection: (section: stri
       </div>
       <div className="flex-1 overflow-hidden">
         <ScrollArea className="h-full">
-          <div className="p-6">
+          <div className="p-6 min-w-60">
             <h2 className="text-sm uppercase font-semibold mb-4">Playlists</h2>
             <ul className="space-y-2">
               {playlists.map((playlist, index) => (
@@ -115,7 +124,7 @@ export function Sidebar({ setActiveSection }: { setActiveSection: (section: stri
           </div>
         </ScrollArea>
       </div>
-      <div className="p-6">
+      <div className="p-6 min-w-60">
         <button className="flex items-center space-x-2 hover:text-white">
           <Download size={24} />
           <span>Install App</span>

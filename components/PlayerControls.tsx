@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function PlayerControls() {
   return (
-    <div className="bg-black text-white p-4 flex items-center justify-between">
+    <div className="bg-black text-white p-4 flex items-center justify-between border-t border-gray-800">
       <div className="flex items-center space-x-4">
         <Image
           src="/placeholder.svg?height=56&width=56"
