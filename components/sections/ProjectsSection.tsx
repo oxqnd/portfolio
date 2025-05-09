@@ -157,14 +157,6 @@ export function ProjectsSection() {
                   <Github size={18} className="mr-1" />
                   <span>Code</span>
                 </a>
-                <a
-                  href={project.demo}
-                  className="flex items-center text-gray-300 hover:text-white"
-                  onClick={(e) => e.stopPropagation()} // Prevent modal from opening when clicking links
-                >
-                  <ExternalLink size={18} className="mr-1" />
-                  <span>Demo</span>
-                </a>
               </div>
             </div>
           </div>
