@@ -2,11 +2,12 @@ import { Play } from "lucide-react"
 import Image from "next/image"
 
 const songs = [
-  { title: "Bohemian Rhapsody", artist: "Queen", album: "A Night at the Opera", duration: "5:55" },
-  { title: "Stairway to Heaven", artist: "Led Zeppelin", album: "Led Zeppelin IV", duration: "8:02" },
-  { title: "Imagine", artist: "John Lennon", album: "Imagine", duration: "3:01" },
-  { title: "Smells Like Teen Spirit", artist: "Nirvana", album: "Nevermind", duration: "5:01" },
-  { title: "Billie Jean", artist: "Michael Jackson", album: "Thriller", duration: "4:54" },
+  { title: "busy guy", artist: "미노이(meenoi)", album: "Single", duration: "2:42", image: "/busy_guy.jpg" },
+  { title: "2+2=4(Broken)", artist: "미노이(meenoi)", album: "EP(미니)", duration: "3:45", image: "/2+2=4.jpg" },
+  { title: "가끔", artist: "Crush", album: "Single", duration: "4:23", image: "/가끔.jpg" },
+  { title: "오늘의 기분", artist: "CHEEZE", album: "EP(미니)", duration: "3:45", image: "/오늘의기분.jpg" },
+  { title: "JASMINE", artist: "DPR LIVE", album: "Single", duration: "3:21", image: "/jasmine.jpg" },
+  { title: "Gravity", artist: "DPR LIVE, DPR CREAM", album: "Single", duration: "2:15", image: "/gravity.jpg" },
 ]
 
 export function MusicSection() {
@@ -14,7 +15,7 @@ export function MusicSection() {
     <div className="p-8">
       <div className="flex items-center space-x-4 mb-8">
         <Image
-          src="/placeholder.svg?height=200&width=200"
+          src="/music.jpg?height=200&width=200"
           width={200}
           height={200}
           alt="Playlist cover"
@@ -48,7 +49,7 @@ export function MusicSection() {
               <td className="py-3">
                 <div className="flex items-center">
                   <Image
-                    src="/placeholder.svg?height=40&width=40"
+                    src={`${song.image}?height=40&width=40`}
                     width={40}
                     height={40}
                     alt={`${song.title} cover`}

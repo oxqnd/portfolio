@@ -3,32 +3,11 @@ import { Briefcase } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
+      title: "Undergraduate Research Student",
+      company: "Network Sience Lab",
+      period: "2023 ~",
       description:
-        "Lead the frontend development team in building responsive web applications. Implemented new features and optimized performance for existing products.",
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Digital Solutions LLC",
-      period: "2019 - 2021",
-      description:
-        "Developed and maintained full-stack web applications using React, Node.js, and MongoDB. Collaborated with designers to implement UI/UX improvements.",
-    },
-    {
-      title: "Junior Web Developer",
-      company: "WebCraft Studios",
-      period: "2017 - 2019",
-      description:
-        "Built responsive websites and implemented frontend features. Assisted in backend development and database management.",
-    },
-    {
-      title: "Freelance Developer",
-      company: "Self-employed",
-      period: "2016 - 2017",
-      description:
-        "Designed and developed websites for small businesses and startups. Managed client relationships and project timelines.",
+        "",
     },
   ]
 
@@ -63,11 +42,11 @@ export function ExperienceSection() {
         <div className="mb-4">
           <div className="flex justify-between items-start">
             <h3 className="text-xl font-bold">Bachelor of Science in Computer Science</h3>
-            <span className="bg-white/20 px-3 py-1 rounded-full text-sm">2015 - 2019</span>
+            <span className="bg-white/20 px-3 py-1 rounded-full text-sm">2023 ~</span>
           </div>
-          <p className="text-green-400">Stanford University</p>
+          <p className="text-green-400">Catholice University of Korea</p>
           <p className="text-gray-300 mt-2">
-            Graduated with honors. Specialized in web development and artificial intelligence.
+            {/* Graduated with honors. Specialized in web development and artificial intelligence. */}
           </p>
         </div>
       </div>

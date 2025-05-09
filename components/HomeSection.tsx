@@ -14,7 +14,7 @@ export function HomeSection() {
         />
         <div>
           <p className="text-sm font-semibold">PORTFOLIO</p>
-          <h1 className="text-5xl font-bold mt-2 mb-4">Seo Jinho</h1>
+          <h1 className="text-5xl font-bold mt-2 mb-4">Jinho Seo</h1>
           <p className="text-sm text-gray-300">Security Developer • Music Lover</p>
         </div>
       </div>
@@ -24,7 +24,7 @@ export function HomeSection() {
           Explore
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
         <div className="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition">
           <h3 className="text-xl font-bold mb-2">About Me</h3>
           <p className="text-gray-300">Learn more about my background, interests, and what drives me.</p>
@@ -41,7 +41,7 @@ export function HomeSection() {
           <h3 className="text-xl font-bold mb-2">Experience</h3>
           <p className="text-gray-300">Review my professional journey and accomplishments.</p>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
