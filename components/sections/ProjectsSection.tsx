@@ -75,7 +75,7 @@ const projects = [
     longDescription:
       "군인을 위한 장소 추천, 리뷰 서비스",
     image: "/군인.png?height=200&width=350",
-    tags: ["Node.js", "Express.js", "JavaScript", "Mysql", "Visual Studio Code"],
+    tags: ["Node.js", "Express.js", "JavaScript", "MySQL", "Visual Studio Code"],
     github: "#",
     demo: "#",
     date: "2024. 06 ~ 2024. 10",
@@ -83,11 +83,11 @@ const projects = [
       "테스트",
       "테스트",
     ],
-    technologies: ["Node.js", "Express.js", "JavaScript","Mysql", "Visual Studio Code"],
+    technologies: ["Node.js", "Express.js", "JavaScript","MySQL", "Visual Studio Code"],
   },
   {
     title: "최신 연구 동향 파악",
-    description: "군2013년 ~ 2023년까지의 연구 내용 수집 및 분석",
+    description: "2013년 ~ 2023년까지의 연구 내용 수집 및 분석",
     longDescription:
       "2013년 ~ 2023년까지의 연구 내용 수집 및 분석",
     image: "/최신연구.png?height=200&width=350",
