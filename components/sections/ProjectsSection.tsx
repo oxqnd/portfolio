@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
+import { title } from "process"
 
 export function ProjectsSection() {
   const projects = [
@@ -27,6 +28,30 @@ export function ProjectsSection() {
       github: "#",
       demo: "#",
     },
+    {
+      title: "추천시스템 모델 개발 및 FastAPI 백엔드 애플리케이션",
+      description: "FastAPI를 활용하여 머신러닝 모델 서빙 및 API 구축",
+      image: "/festapi.png?height=200&width=350",
+      tags: ["Python", "FastAPI", "Scikit-learn", "Visual Studio Code"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      title: "군인을 위한 장소 추천, 리뷰 서비스",
+      description: "군인을 위한 장소 추천 및 리뷰 서비스",
+      image: "/군인.png?height=200&width=350",
+      tags: ["Node.js", "Express.js", "Mysql", "Visual Studio Code"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      title: "최신 연구 동향 파악",
+      description: "2013년 ~ 2023년까지의 연구 내용 수집 및 분석",
+      image: "/최신연구.png?height=200&width=350",
+      tags: ["Python", "K-means Clustering", "t-SNE","Doc2Vec", "Matplotlib", ,"Visual Studio Code"],
+      github: "#",
+      demo: "#",
+    }
   ]
 
   return (
