@@ -12,7 +12,7 @@ const projects = [
       "소프트웨어 가상화 프로그램",
     image: "/ObfusX.png?height=200&width=350",
     tags: ["C++", "Assembly", "Capstone", "Viusal Studio"],
-    github: "#",
+    github: "https://github.com/ObfusX",
     demo: "#",
     date: "2025. 05",
     features: [
@@ -28,7 +28,7 @@ const projects = [
       "Prime+Probe 계열의 캐시 사이드채널 공격을 식별하기 위해, GNN 을 활용한 딥러닝 기반 탐지 기법",
     image: "/whotouched.png?height=200&width=350",
     tags: ["Python", "Graph Neural Network", "Pytorch", "Torch Geometric", "Scikit-learn", "Visual Studio Code"],
-    github: "#",
+    github: "https://github.com/oxqnd/Who-Touched-My-Cache",
     demo: "#",
     date: "2025. 05",
     features: [
@@ -60,7 +60,7 @@ const projects = [
       "FastAPI를 활용하여 머신러닝 모델 서빙 및 API 구축",
     image: "/festapi.png?height=200&width=350",
     tags: ["Python", "FastAPI", "Scikit-learn", "Visual Studio Code"],
-    github: "#",
+    github: "https://github.com/SeoulFest/FestAPI",
     demo: "#",
     date: "2025. 04 ~ ",
     features: [
@@ -76,7 +76,7 @@ const projects = [
       "군인을 위한 장소 추천, 리뷰 서비스",
     image: "/군인.png?height=200&width=350",
     tags: ["Node.js", "Express.js", "JavaScript", "MySQL", "Visual Studio Code"],
-    github: "#",
+    github: "https://github.com/ArmyCo/army_venture_backend",
     demo: "#",
     date: "2024. 06 ~ 2024. 10",
     features: [
@@ -156,14 +156,6 @@ export function ProjectsSection() {
                 >
                   <Github size={18} className="mr-1" />
                   <span>Code</span>
-                </a>
-                <a
-                  href={project.demo}
-                  className="flex items-center text-gray-300 hover:text-white"
-                  onClick={(e) => e.stopPropagation()} // Prevent modal from opening when clicking links
-                >
-                  <ExternalLink size={18} className="mr-1" />
-                  <span>Demo</span>
                 </a>
               </div>
             </div>
